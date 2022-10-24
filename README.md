@@ -1,4 +1,4 @@
 # mirror-fashion
 
-- Estudo de livro sobre: HTML,PHP, CSS e JavaScript.
-- Criação de um site baseado nos exercícios.
+Modelo de um site e-commerce; a Mirror Fashion, é beasedo em uma série de exercícios usando HTML, CSS, JavaScript e PHP. 
+
