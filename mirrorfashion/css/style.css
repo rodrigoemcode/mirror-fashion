@@ -222,7 +222,7 @@ footer .container {
 
 .painel {
     border-radius: 4px;
-    box-shadow: inset 1px 1px 4px #999;
+    box-shadow: 1px 1px 4px #999;
 }
 
 /* .painel h2 {
