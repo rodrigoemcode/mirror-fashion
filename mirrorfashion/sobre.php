@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/mirrorfashion/css/sobre.css">
     <title>Sobre a Mirror Fashion</title>
+
+    <link rel="stylesheet" href="/mirrorfashion/css/reset.css">
+    <link rel="stylesheet" href="/mirrorfashion/css/style.css">
+    <link rel="stylesheet" href="/mirrorfashion/css/mobile.css" media="(max-width: 939px>">
 </head>
 <body>
-    <img src="/mirrorfashion/img/logo.png">
+    <?php include("cabecalho.php"); ?>
 
     <h1>A Mirror Fashion</h1>
 
@@ -54,19 +57,16 @@ Fashion, além de presidentes da União Européia, Ásia e o secretário-geral d
     </p>
     <h2 id="diferenciais">Diferenciais</h2>
         <ul>
-        <li>Menor preço do varejo, garantido</li>
-        <li>Se você achar uma loja mais barata, leva o produto de graça</li>
-        <li>Pague em reais, dólares, euros ou bitcoins</li>
-        <li>Todas as compras com frete grátis para o mundo todo</li>
-        <li>Maior comércio eletrônico de moda do mundo</li>
-        <li>Atendimento via telefone, email, chat, twitter, facebook, carta, fax e telegrama</li>
-        <li>Presente em 124 países</li>
-        <li>Mais de um milhão de funcionários em todo o mundo</li>
+            <li>Menor preço do varejo, garantido</li>
+            <li>Se você achar uma loja mais barata, leva o produto de graça</li>
+            <li>Pague em reais, dólares, euros ou bitcoins</li>
+            <li>Todas as compras com frete grátis para o mundo todo</li>
+            <li>Maior comércio eletrônico de moda do mundo</li>
+            <li>Atendimento via telefone, email, chat, twitter, facebook, carta, fax e telegrama</li>
+            <li>Presente em 124 países</li>
+            <li>Mais de um milhão de funcionários em todo o mundo</li>
         </ul>
-    <div id="rodape">
-        <img src="../mirrorfashion/img/logo.png" alt="logo">
 
-        &copy; Copyright Mirror Fashion
-    </div>
+    <?php include("rodape.php"); ?>
 </body>
 </html>
