@@ -163,6 +163,9 @@
         </section>
     </div>
 
+    <script src="js/converteMoeda.js"></script>
+    <script src="js/testaConversao.js"></script>
+    
     <?php include("rodape.php"); ?>
 
 </body>
