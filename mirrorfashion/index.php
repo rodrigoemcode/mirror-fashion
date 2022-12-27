@@ -106,6 +106,7 @@
                     </a>
                 </li>
             </ol>
+            <button type="button">Mostra mais</button>
         </section>
 
         <section class="painel mais-vendidos">
@@ -160,9 +161,11 @@
                     </a>
                 </li>
             </ol>
+            <button type="button">Mostra mais</button>
         </section>
     </div>
-
+    <script src="js/jquery.js"></script>
+    <script src="js/home.js"></script>
     <script src="js/converteMoeda.js"></script>
     <script src="js/testaConversao.js"></script>
     
