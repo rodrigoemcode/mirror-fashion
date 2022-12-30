@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Bad+Scrpit' rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/mirrorfashion/css/reset.css">
     <link rel="stylesheet" href="/mirrorfashion/css/style.css">
