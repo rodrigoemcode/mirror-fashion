@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?= 
+$conexao = mysqli_connect("127.0.0.1", "root", "", "WD43");
+$dados = mysqli_query($conexao, "SELECT * FROM produtos");
+$produto = mysqli_fetch_array($dados);
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,8 +21,8 @@
 
     <div class="container">
         <div class="produto">
-            <h1>Fuzzy Cardigan</h1>
-            <p>por apenas R$ 129,00</p>
+            <h1><?= $produto['nome1'] ?></h1>
+            <p>por apenas <?= $produto['preco'] ?></p>
 
             <form action="checkout.php" method="POST">
                 <fieldset class="cores">
@@ -58,7 +63,7 @@
         <div class="detalhes">
             <h2>Detalhes do produto</h2>
 
-            <p>Esse é o melhor casaco de Cardigã que você já viu. Excelente material italiano com estampa desenhada pelos artesãos da comunidade de Krotor nas ilhas gregas. Compre já e receba hoje mesmo pela nossa entrega ajato. </p>
+            <p><?= $produto['descricao'] ?></p>
 
             <table>
                 <thead>
