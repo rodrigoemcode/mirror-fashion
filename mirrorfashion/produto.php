@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<?= 
-$conexao = mysqli_connect("127.0.0.1", "root", "", "WD43");
-$dados = mysqli_query($conexao, "SELECT * FROM produtos");
-$produto = mysqli_fetch_array($dados);
+<?php
+    $conexao = mysqli_connect("127.0.0.1", "root", "", "WD43");
+    $dados = mysqli_query($conexao, "SELECT * FROM produtos WHERE id = $_GET[id]");
+    $produto = mysqli_fetch_array($dados);
 ?>
 <html lang="en">
 <head>
@@ -11,18 +11,18 @@ $produto = mysqli_fetch_array($dados);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirror Fashion</title>
 
-    <link rel="stylesheet" href="/mirrorfashion/css/reset.css">
-    <link rel="stylesheet" href="/mirrorfashion/css/produto.css">
-    <link rel="stylesheet" href="/mirrorfashion/css/style.css">
-    <link rel="stylesheet" href="/mirrorfashion/css/mobile.css" media="(max-width: 939px>">
+    <link rel="stylesheet" href="/mirror-fashion/mirrorfashion/css/reset.css">
+    <link rel="stylesheet" href="/mirror-fashion/mirrorfashion/css/produto.css">
+    <link rel="stylesheet" href="/mirror-fashion/mirrorfashion/css/style.css">
+    <link rel="stylesheet" href="/mirror-fashion/mirrorfashion/css/mobile.css" media="(max-width: 939px>">
 </head>
 <body>
     <?php include("cabecalho.php"); ?>
 
     <div class="container">
         <div class="produto">
-            <h1><?= $produto['nome1'] ?></h1>
-            <p>por apenas <?= $produto['preco'] ?></p>
+            <h1><?= $produto['nome'] ?></h1>
+            <p>por apenas<?= $produto['preco'] ?></p>
 
             <form action="checkout.php" method="POST">
                 <fieldset class="cores">
@@ -30,17 +30,17 @@ $produto = mysqli_fetch_array($dados);
 
                     <input type="radio" name="cor" value="verde" id="verde" checked>
                     <label for="verde">
-                        <img src="img/produtos/foto2-verde.png" alt="verde">
+                        <img src="img/produtos/foto<?= $produto['id'] ?>-verde.png" alt="verde">
                     </label>
 
                     <input type="radio" name="cor" value="rosa" id="rosa" checked>
                     <label for="rosa">
-                        <img src="img/produtos/foto2-rosa.png" alt="rosa">
+                        <img src="img/produtos/foto<?= $produto['id'] ?>-rosa.png" alt="rosa">
                     </label>
 
                     <input type="radio" name="cor" value="azul" id="azul" checked>
                     <label for="azul">
-                        <img src="img/produtos/foto2-azul.png" alt="azul">
+                        <img src="img/produtos/foto<?= $produto['id'] ?>-azul.png" alt="azul">
                     </label>
 
                 </fieldset>
@@ -90,8 +90,8 @@ $produto = mysqli_fetch_array($dados);
         </div>
     </div>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/produto.js"></script>
+    <script src="/mirror-fashion/js/jquery.js"></script>
+    <script src="/mirror-fashion/js/produto.js"></script>
     <?php include("rodape.php"); ?>
 </body>
 </html>

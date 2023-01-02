@@ -44,7 +44,7 @@
                                 <h2 class="panel-title">Sua compra</h2>
                             </div>
                             <div class="panel-body">
-                                <img src="/mirrorfashion/img/produtos/foto1-<?= $_POST["cor"] ?>.png"
+                                <img src="/mirror-fashion/mirrorfashion/img/produtos/foto1-<?= $_POST["cor"] ?>.png"
                                     class="img-thumbnail img-responsive">
                                 <dl>
                                     <dt>Cor</dt>
